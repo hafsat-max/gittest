@@ -1,0 +1,97 @@
+
+#pil{
+    background-color: dodgerblue;
+    text-align: justify;
+    line-height: normal;
+    
+}
+
+#fill{
+    background-color: darkblue;
+    text-align: center;
+    text-decoration-style: solid;
+    height: inherit;
+    font-weight: 1500px;
+    height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+p3{
+  text-align: justify;
+  width: 25px
+  height: 25px;
+  line-height: 1.4em;
+    letter-spacing: 0.08em;
+}
+
+
+
+.my-form {
+  padding: 20px;
+}
+
+
+#pic{
+    border-radius: 50px;
+    height: 100px;
+    margin-left: 50px;
+    
+}
+
+
+
+#pit{
+    border-radius: 50px;
+    height: 100px;
+}
+
+
+
+a:hover{
+    color:crimson;
+    text-decoration: underline;
+}
+
+
+@media (min-width: 769px){
+    width: auto;
+    display: inline-block;
+    
+}
+
+
+
+#sect{
+     max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid #EEE;
+  margin: 30px;
+  padding: 10px;
+}
