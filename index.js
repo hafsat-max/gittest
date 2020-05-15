@@ -25,4 +25,3 @@ calculateButton.addEventListener('click', () => {
 });
 
 
-console.log(keyValue);
