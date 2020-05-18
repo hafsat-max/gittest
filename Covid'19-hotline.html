@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="Flap.css">
+            <title>Flap</title>
+            <header id="fill">BUSARI ABIODUN AFUSAT<br>Web developer</header>
+        <script src="./js/jas.js"></script>
+    </head>
+    <body style="background-color: #33ff77;">
+        <div id="pil">
+                
+                    <li><a href="Flap.html">Homepage</a></li> 
+                     <li><a href="wash.html">About</a></li>
+                    <li><a href="flap2.html">Contact</a></li>
+                    
+            
+        </div>
+        <section><h1 style="text-align: center;">DIRECTORY OF COVID-19 STATE HELPLINES</h1></section>
+    
+    
+           <section id="sect">
+                If you have noticed any symptoms,<br> make sure to contact us. Remember<br>that self medication is wrong and<br> can kill.
+        </section>
+    <section  onload="resetSelection()">
+
+            <div id="geoPoliticalZones">
+            <select id='category' onchange='saveZone(this.value)' size='1'></select>
+        </div>
+            <div id="subCategory">
+                <select id="states" onchange="alert(this.value)"></select>
+            </div>l
+
+            </section>
+        
+        <script>
+            let selectedZone = '';
+            const susbCategories = document.getElementById('states');
+            function saveZone(value) {
+                selectedZone = value;
+                 const selectedCategory = subCategory.filter(item => {
+                return item.name === selectedZone;
+                 });
+                const categories = selectedCategory[0].subValues.map((item, index) => {
+                    return `<option value='${item.phone}'>${item.state}</option>`;
+                })
+                susbCategories.innerHTML=categories;
+            }
+            const geoPoliticalZones = document.getElementById('category');
+            const zones = subCategory.map((item, index) => {
+                return `<option value='${item.name}'>${item.name}</option>}`;
+            })
+            
+            geoPoliticalZones.innerHTML = zones;
+            
+            
+           
+            
+        </script>
+    </body>
+</html>
+
+    

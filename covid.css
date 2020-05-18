@@ -1,0 +1,70 @@
+element.style {
+}
+@media screen and (max-width: 1280px)
+
+.div-container {
+    width: 100%;
+}
+
+.div-container {
+    width: 1280px;
+    text-align: center;
+    padding: 40px 20px;
+    margin: auto;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    overflow-x: hidden;
+    scroll-padding-top: 44px;
+    margin: 44px 0px 0px;
+    padding: 0px;
+    background: whitesmoke;
+}
+
+:root {
+    --bg:  #fff;
+    --b-w:  #000;
+    --primary: #4f8cfe;
+    --p-text:  #4e4e4d;
+    --bg-div:  #f2f2f2;
+    --h4:  #0f639b;
+    --w-b:  #fff;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
