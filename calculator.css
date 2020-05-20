@@ -1,5 +1,5 @@
 #body {
-	background: #1affff;
+	background: lavenderblush;
 	height: 100%;
 }
 #container{
@@ -33,6 +33,7 @@ td{
 	width: 50px;
 	height: 50px;
 	font-size: 120%;
+    background-color: b;
 }
 #equal{
 	position: absolute;
@@ -81,4 +82,9 @@ hi{
 
 f{
  height: 100px;   
+}
+
+
+.col{
+    background-color: brown;
 }
