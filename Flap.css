@@ -77,12 +77,6 @@ a:hover{
 }
 
 
-@media (min-width: 769px){
-    width: auto;
-    display: inline-block;
-    
-}
-
 
 
 #sect{
@@ -92,7 +86,7 @@ a:hover{
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  border: 2px solid #EEE;
+    /
   margin: 30px;
   padding: 10px;
 }
@@ -103,22 +97,28 @@ category{
 }
 
 
-
+header{
+    font-style: obliquess;
+}
 
 footer{
     text-align: center;
     
 }
 
+#wrap{
+    background-image: url('pic1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
 
 
-//** FLAP STYLING **//
-                body{
-                    text-align: center;
-                    font-family: cursive;
+//*
+                    
+                    
                 }
                 .container{
                     background: cyan;

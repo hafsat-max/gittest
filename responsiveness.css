@@ -1,0 +1,17 @@
+
+@media screen and (min-width: 480px) {
+    #primary{
+        width: 50%;
+        float: left;
+    }
+    
+    #sec{
+        width: 40%;
+        float: right;  
+    }
+}
+
+
+@media screen and (min-width: 660px){
+    
+}
