@@ -1,6 +1,8 @@
 
 @media screen and (min-width: 480px) {
     #primary{
+         background-color: green;
+        
         width: 50%;
         float: left;
     }
@@ -9,9 +11,18 @@
         width: 40%;
         float: right;  
     }
+    
+    body{
+        background-color: mediumseagreen;
+    }
+    
+   
 }
 
 
 @media screen and (min-width: 660px){
+    body{
+        background-color: mediumspringgreen;
+    }
     
 }
