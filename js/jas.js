@@ -10,7 +10,7 @@
 //        }
         
         var subCategory = [
-            {name: 'NORTH-CENTRAL', subValues:[{state: "BENUE STATE", phone: 09018602439}, {state: "FCT", phone: 08099936312}, {state: "KOGI STATE", phone: 0704485619}, {state: "KWARA STATE", phone: 090620100001},{state: "Niger STATE", phone:08038246018}, {state: "PLATEAU STATE", phone: 07032864444}]},
+            {name: 'NORTH-CENTRAL', subValues:[{state: "BENUE STATE", phone: 09018602439}, {state: "FCT", phone: 08099936312}, {state: "KOGI STATE", phone: 0704485619}, {state: "KWARA STATE", phone: 090620100001},{state: "NIGER STATE", phone: 08038246018}, {state: "PLATEAU STATE", phone: 07032864444}]},
             
             {name: 'NORTH-WEST', subValues:[{state: "KADUNA STATE", phone: 08035871662}, {state: "KANO STATE", phone: 08039704476}, {state: "KATSINA STATE", phone: 09035037114}, {state: "SOKOTO STATE", phone: 08032311116}, {state: "ZAMFARA STATE", phone:08035626731 }]},
             

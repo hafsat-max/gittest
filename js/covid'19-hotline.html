@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="Flap.css">
+	<title>Flap</title>
+	<header id="fill">BUSARI ABIODUN AFUSAT<br>Web developer</header>
+</head>
+
+<body style="background-color: grey;">
+	<div id="pil">
+
+		<li><a href="Flap.html">Homepage</a></li>
+		<li><a href="wash.html">About</a></li>
+		<li><a href="flap2.html">Contact</a></li>
+		<li><a href="flap3.html">t</a></li>
+
+	</div>
+	<section></section>
+
+
+	<section id="sect">
+		If you have noticed any symptoms,<br> make sure to contact us.remember<br>that self medication is wrong and<br> can kill.
+	</section>
+	<section onload="resetSelection()">
+
+		<select id="category" size="1" onchange="makeSubmenu(this.value)">
+                <option value="" disabled selected>Choose Category</option>
+                <option>ABIA</option>
+                <option>ADAMAWA</option>
+                <option>AKWAIBOM</option>
+                <option>ANAMBRA</option>
+                <option>BAUCH</option>
+                <option>BAYELSA</option>
+                <option>BENUE</option>
+                <option>BORNO</option>
+                <option>CROSSRIVER</option>
+                <option>DELTA</option>
+                <option>EBONYI</option>
+                <option>EDO</option>
+                <option>EKITI</option>
+                <option>ENUGU</option>
+                <option>GOMBE</option>
+                <option>IMO</option>
+                <option>JIGAWA</option>
+                <option>KADUNA</option>
+                <option>KANO</option>
+                <option>KATSINA</option>
+                <option>KEBBI</option>
+                <option>KOGI</option>
+                <option>KWARA</option>
+                <option>LAGOS</option>
+                <option>NASSARAWA</option>
+                <option>NIGER</option>
+                <option>OGUN</option>
+                <option>ONDO</option>
+                <option>OSUN</option>
+                <option>OYO</option>
+                <option>PLATEAU</option>
+                <option>RIVERS</option>
+                <option>SOKOTO</option>
+                <option>TARABA</option>
+                <option>GOMBE</option>
+                <option>ZAMFARA</option>
+                
+                
+            </select>
+		<select id="categorySelect" size="1">
+                <option value="" disabled selected>Choose Subcategory</option>
+                <option></option>
+            </select>
+		<button onclick="displaySelected()">show selected</button>
+
+	</section>
+	<script src="jas.js"></script>
+
+</body>
+
+</html>

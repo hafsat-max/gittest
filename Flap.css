@@ -85,12 +85,13 @@ a:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-    /
+    word-wrap: break-word;
+    word-break:keep-all;
+  border: 1px solid black;
   margin: 30px;
   padding: 10px;
 }
-
+console.log('#sect');
 
 category{
     grid-column: ;
@@ -110,6 +111,9 @@ footer{
     background-image: url('pic1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
 }
 
 

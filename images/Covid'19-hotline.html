@@ -5,39 +5,34 @@
             <link rel="stylesheet" href="Flap.css">
             <link rel="stylesheet" href="responsiveness.css">
 
-            <title>Flap</title>
-            <header id="fill">DIRECTORY OF COVID-19 STATE HELPLINES</header>
+            <title>Covid'19-hotline</title>
+        <header id="fill"> DIRECTORY OF COVID-19 STATE HELPLINES</header>
         <script src="./js/jas.js"></script>
     </head>
-    <body  id="wrap" style="background-image: url('pic1.jpg'); background-repeat: no-repeat; background-size: cover; background-blend-mode:darken; ">
+    <body  id="wrap">
 
-        <section id="sect">
+    <section id="sect">
             If you have noticed any symptoms,<br> make sure to contact us. Remember<br>that self medication is wrong and<br> can kill.
       </section>
     <section  onload="resetSelection()">
 
-            <div id="geoPoliticalZones">
-            <select id='category' onchange='saveZone(this.value)' size='1'></select>
+        <div id="geoPoliticalZones">
+             <select id='category' onchange='saveZone(this.value)' size='1'>
+             </select>
         </div>
-            <div id="subCategory">
+        <div id="subCategory">
                 <select id="states" onchange="alert(this.value)"></select>
-            </div>
+        </div>
 
             </section>
-        
+
+        <div>
+        	&#169; Busari Abiodun Afusat 
+        </div>
         <script>
             let selectedZone = '';
             const susbCategories = document.getElementById('states');
-            function saveZone(value) {
-                selectedZone = value;
-                 const selectedCategory = subCategory.filter(item => {
-                return item.name === selectedZone;
-                 });
-                const categories = selectedCategory[0].subValues.map((item, index) => {
-                    return `<option value='${item.phone}'>${item.state}</option>`;
-                })
-                susbCategories.innerHTML=categories;
-            }
+            
             const geoPoliticalZones = document.getElementById('category');
             const zones = subCategory.map((item, index) => {
                 return `<option value='${item.name}'>${item.name}</option>}`;
@@ -46,9 +41,21 @@
             geoPoliticalZones.innerHTML = zones;
             
             
-           
-            
-        </script>
+
+            function saveZone(value) {
+                selectedZone = value;
+                const selectedCategory = subCategory.filter(item => {
+                    return item.name === selectedZone;
+                });
+
+                const categories = selectedCategory[0].subValues.map((item, index) => {
+                    return `<option value='${item.phone}'>${item.state}</option>`;
+                })
+                susbCategories.innerHTML=categories;
+            }
+            </script>
+        
+
     </body>
 </html>
 
