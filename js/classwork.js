@@ -1,14 +1,4 @@
-
-
-//
-//        var subcategory = {
-//            NORTHCENTRAL: ["BENUE STATE", "FCT", "KOGI STATE", "NIGER STATE", "PLATEAU"],
-//            NORTHWEST: ["KADUNA STATE", "KANO STATE", "KATSINA STATE", "SOKOTO SATE", "ZAMFARA STATE"],
-//            NORTHEAST: ["ADAMAWA SATE", "BAUCHI STATE", "BORNO STATE", "GOMBE STATE", "TARABA STATE", "YOBE STATE"],
-//            SOUTHSOUTH: ["AKWAIBOM STATE", "BAYELSA STATE", "CROSSRIVER STATE", "DELTA STATE", "EDO STATE", "RIVER STATE"]
-//        
-//        }
-        
+ 
         const areas = [
             {name: 'NORTH-CENTRAL', subValues:[{state: "BENUE STATE", phone: 09018602439}, {state: "FCT", phone: 08099936312}, {state: "KOGI STATE", phone: 0704485619}, {state: "KWARA STATE", phone: 090620100001},{state: "NIGER STATE", phone: 08038246018}, {state: "PLATEAU STATE", phone: 07032864444}]},
             
@@ -23,56 +13,75 @@
             
             {name: 'SOUTH-WEST', subValues:[{state: "OGUN STATE", phone: 08188978392 }, {state: "ONDO STATE", phone:070012684319 }, {state: "OSUN STATE", phone:08035025692 }, {state: "OYO STATE", phone:08038210122 }, {state: "EKITI STATE", phone:09062970434 }, {state:  "LAGOS STATE", phone:08023169485} ]},
             
- 
+            
         ]
-        
-        const geoPoliticalZonesId = document.getElementById('geo-political-zones');
 
 
-        const statesId = document.getElementById('states');
+
+
+
+
+const selectZones = document.getElementById('select-zone');
+const selectStates = document.getElementById('select-state');
+const  theInput = document.getElementById('the-input');
+const displayButton = document.getElementById('display-button')
 
 
         const listOfZones = areas.map(item => {
             return `<option value='${item.name}'>${item.name}</option>`;
         })
-
-        geoPoliticalZonesId.innerHTML = listOfZones;
-
-        function getStates(nameOfZone) {
-             const selectedArea = areas.filter(item => {
-                return item.name === nameOfZone;
-             });
-            const categories = selectedArea[0].subValues.map(item => {
-                return `<option value='${item.phone}'>${item.state}</option>`;
-            })
-            statesId.innerHTML=categories;
-        }
-
+        selectZones.innerHTML= '<option value="">Select a zone...</option>' + listOfZones;
+            
+            
+        
+function getStates(nameOfStates){
+    const areaPicked = areas.filter(item => {
+        return item.name === nameOfStates;
+    });
+    const categories = areaPicked[0].subValues.map(item =>{
+        return `<option value ='${item.phone}'>${item.state}</option>`;
+    })
+       selectStates.innerHTML =  '<option value="">Select state...</option>' + categories;                    
+ }                                                 
     
 
+let selectedPhone = " ";
 
+function setSelectedNumber(phone){
+    selectedPhone = phone
+}
 
-//function doSomething(value) {
-//    
-//}
-//
-//const doSometing2 = (value) => {
-//    
-//}
-//
-//(value) => {
-//    
-//}
-//
-//function () {
-//    
-//}
+function getNumbers(){
 
-
-
-
-
-
-
-
-
+    theInput.value = selectedPhone;
+}
+;
+              
+           
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
