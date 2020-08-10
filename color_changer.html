@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Color changer</title>
+</head>
+<style>
+    h,
+    input {
+        text-shadow: black;
+        height: 40px;
+        color: grey;
+        text-align: center;
+        shape-rendering: crispEdges;
+        align-self: start;
+        margin: auto;
+        display: block;
+    }
+</style>
+
+<body>
+    <div>
+        <h>CLICK HERE TO CHANGE THE COLOR:</h>
+        <input type="button" onclick="changeColor()" value="Button" id='btn1' />
+    </div>
+</body>
+<script>
+    let colors = ['green', 'blue', 'yellow', 'pink', 'red']
+    let i = 0
+
+    function changeColor() {
+        document.body.style.backgroundColor = colors[i]
+        i += 1
+        if (i === colors.length) {
+            i = 0
+        }
+    }
+</script>
+
+</html>

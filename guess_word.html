@@ -1,0 +1,42 @@
+<!doctype HTML>
+
+<html>
+
+<head>
+    <title>GUESS_WORD</title>
+    <link rel="stylesheet" type="text/css" href="cs.css">
+</head>
+
+<body>
+    <div class="container-1">
+        <div id="box">
+            <div id="headings">
+                <h1 id="a">H</h1>
+                <h1 id="b">A</h1>
+                <h1 id="c">N</h1>
+                <h1 id="d">G </h1>
+                <h1 id="e">M</h1>
+                <h1 id="f">A</h1>
+                <h1 id="g">N</h1>
+                <h1 id="h">!</h1>
+
+            </div>
+
+            <form>
+                <button type="button" class="btn-try" onclick="generateNumber(); return false;">Start game</button></form>
+
+
+            <form id="submit" onsubmit="checkAnswer(); return false;">
+                <input id="input" class="btn-try">
+                <button type="submit" class="btn-try">Submit trial</button>
+            </form>
+            <span id="display" class="btn-try">
+            </span><br>
+            <br><br><br> <span id=show></span>
+        </div>
+    </div>
+</body>
+<script src="guess_word.js">
+</script>
+
+</html>

@@ -7,6 +7,7 @@ const result = document.getElementById('result');
 const display = document.getElementById('display');
 const show = document.getElementById('show');
 const resultArray = [];
+let myResult = 0;
 
 function storeName() {
     if (name.value) {
@@ -17,6 +18,7 @@ function storeName() {
     } else {
         alert('enter your name');
     }
+
 }
 
 function listNames() {
@@ -35,7 +37,6 @@ function getStuffs() {
     });
     if (courseIndex === -1) {
         gpaObj[index].courses.push({ course: courses.value, score: score.value });
-        courses.value = '';
     } else {
         alert('you have entered the score for this subject');
     }
@@ -60,7 +61,8 @@ function getGpa() {
     const theResult = resultArray.reduce(function(a, b) {
         return a + b;
     });
-    result.innerHTML = theResult / resultArray.length;
+    myResult = theResult / resultArray.length;
+    result.innerHTML = 'Your gpa is: ' + myResult;
     displayResult();
 }
 
@@ -77,13 +79,34 @@ function displayResult() {
 }
 
 function showDetails() {
-    let i;
-    let lastDetails = '';
-    const finalArray = [];
-    const displays = finalArray.push(name.value + ' ' + resultArray[i]);
-    for (i = 0; i < displays.length; i++) {
-        lastDetails += displays[i];
-    }
-    show.innerHTML = lastDetails;
-    console.log(displays);
+    let lastArray = [];
+    let counter = 0;
+    gpaObj.forEach((item) => {
+        gpaObj[counter].courses.forEach((item) => {
+            if (item.score < 45) {
+                lastArray.push(1);
+            } else if (item.score < 50) {
+                lastArray.push(2);
+            } else if (item.score < 60) {
+                lastArray.push(3);
+            } else if (item.score < 70) {
+                lastArray.push(4);
+            } else {
+                lastArray.push(5);
+            }
+        });
+        counter++;
+        console.log(lastArray);
+        const total = lastArray.reduce(function(a, b) {
+            return a + b;
+        });
+        console.log(total);
+        console.log(item.courses.length);
+
+        const gp = total / item.courses.length;
+        console.log(item.name + ': ' + gp);
+        lastArray = [];
+    });
 }
+let array = [2, 3, 4, 5, 6, 7];
+let secondArray = [];

@@ -1,37 +1,51 @@
-<!DOCTYPE html>
+<!doctype HTML>
 <html>
 
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="cs.css">
     <title>GP CALCULATOR</title>
 </head>
 
-<form onsubmit="storeName(); return false;">
-    name: <input type="text" name="text" id="name" />
-    <button type="submit">Submit</button>
-</form>
-<br /><br />
-<br />
+<body>
 
-<select id="select"> </select
-	><br /><br /><br />
-	<select id="courses">
-		<option>phy101</option>
-		<option>phy103</option>
-		<option>phy107</option>
-		<option>mat101</option>
-		<option>mat103</option>
-	</select>
-<form type="submit" onsubmit="getStuffs(); return false;">
-    > Enter score: <input type="number" name="numbesr" id="score" />
-    <button type="submit">store score</button>
-</form>
-<button onclick="getGpa(); return false">Submit</button>
-<span id="result"></span
-	><br /><br />
-	<span id="display"></span>
-<button type="submit" onclick="showDetails(); return false;">Store name/GP</button>
-<span id="show"></span>
-<script src="./gp_calculator.js"></script>
+    <div id="container">
+        <div id="inner-div">
+            <h3>Welcome </h3>
+            <form onsubmit="return false;">
+                <p>Enter your name:</p>
+                <input type="text" name="text" id="name" class="inpt" /><br /><br />
+                <button type="submit" class="btn" onclick="storeName();">Submit</button>
+            </form>
+            <br /><br />
+
+            <form> <select id="select" class="gp-form">
+            </select>
+            </form><br /><br /><br />
+            <form> <select id="courses" class="gp-form">/form>
+            <option>phy101</option>
+            <option>phy103</option>
+            <option>phy107</option>
+            <option>mat101</option>
+            <option>mat103</option>
+            </select>
+                <form type="submit" onsubmit="getStuffs(); return false;">
+                    <p> Enter score:</p>
+                    <input type="number" name="number" id="score" class="inpt" /><br /><br />
+                    <button type="submit" class="btn">store score</button>
+                </form><br /> <br />
+                <form>
+                    <button onclick=" getGpa(); return false; " class="btn">Submit</button>
+                </form>
+                <span id=" result"></span><br /><br />
+                <span id="display"></span><br /><br />
+                <form><button type="submit" onclick="showDetails(); return false;" class="btn">Display</button>
+                </form> <br /><br />
+                <br/> <span id="show"></span>
+
+        </div>
+    </div>
+</body>
+<script src="./gp_calculator.js "></script>
 
 </html>

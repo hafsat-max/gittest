@@ -1,34 +1,32 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset = "utf-8">
-    <title>Report Sheet</title>
-</head>
- <style>
-        #selection{margin: 20px 50px; width: 50%;}
-        input{display: block; margin: 20px 30px;}
-        span { margin: 50px 50px;}
-    </style>
-<body>
-        <form onsubmit="addUser(); return false;">
-                First Name: <input type="text" name="text" id="first-name"><br>
-<button id="details" type="submit" >Submit</button>
-    </form>
-       <select id="selection"  size="1">
-        </select>
-    
-    <form onsubmit="addScore(); return false;"><br>
-         Enter Score:<input type="number" name="number" id="score"><br>
-          <button type="submit">Submit score</button>
-    </form>
-    <div id="report"></div>
-    <span id="average">
-    </span>
-    <span id="highest"></span>
-    <span id="lowest"></span>
-    
- </body>
-    <script src="./report.js"></script>
 
-                
+<head>
+    <meta charset="utf-8" />
+    <title>Report Sheet</title>
+    <link rel="stylesheet" href="cs.css" />
+</head>
+
+<body>
+    <div id="report-container">
+        <h3>Score grader</h3>
+        <form onsubmit="addUser(); return false;" id='gp-form'>
+            <p>First Name:</p>
+            <input type="text" name="text" id="first-name" class="inpt" />
+            <button id="details" type="submit" class="btn">Submit</button>
+        </form>
+        <select id="selection" size="1" class="slt"> </select>
+        <form onsubmit="addScore(); return false;">
+            <p>Enter Score:</p>
+            <input type="number" name="number" id="score" class="inpt" /><br />
+            <button type="submit" class="btn">Submit score</button>
+        </form>
+        <div id="report"></div>
+        <span id="average"></span>
+        <span id="highest"></span>
+        <span id="lowest"></span>
+    </div>
+</body>
+<script src="./report.js "></script>
+
 </html>
