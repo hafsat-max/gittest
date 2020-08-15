@@ -1,86 +1,77 @@
 #body {
-	background: lavenderblush;
-	height: 100%;
+    background: lavenderblush;
+    height: 100%;
 }
-#container{
-	position: absolute;
-	top: 50px;
-	left: 35%;
-	right: 35%
+
+#container {
+    position: absolute;
+    top: 50px;
+    left: 35%;
+    right: 35%
 }
-table, th, td {
+
+table,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-th, td {
+
+th,
+td {
     padding: 5px;
-    text-align: left;    
+    text-align: left;
 }
-td{
-	border: 0 !important;
+
+td {
+    border: 0 !important;
 }
-.textview{
-	width: 240px;
-	height: 60px;
-	font-size: 30px;
+
+.textview {
+    width: 235px;
+    height: 60px;
+    font-size: 30px;
 }
-#table{
+
+#table {
     background-color: #333;
-    color: red;
+    color: blue;
     width: 30%;
 }
-.h{
-	width: 50px;
-	height: 50px;
-	font-size: 120%;
-    
+
+.h {
+    width: 50px;
+    height: 50px;
+    font-size: 120%;
+    box-shadow: inset 0 0 3px grey;
 }
-#equal{
-	position: absolute;
-	height: 150px;
-	width: 50px;
-	top: 250px;
+
+#equal {
+    position: absolute;
+    height: 150px;
+    width: 50px;
+    top: 250px;
 }
-#dot{
-	height: 50px;
-	width: 110px;
-	font-size: 150%;
+
+#dot {
+    height: 50px;
+    width: 110px;
+    font-size: 150%;
 }
+
 #head {
-	background-color: white;
-	padding: 5px 5px;
+    background-color: white;
+    padding: 5px 5px;
 }
-#head #cal{
-	text-align: left;
+
+#head #cal {
+    text-align: left;
 }
-#head #ans{
-	text-align: right;
+
+#head #ans {
+    text-align: right;
 }
 
 #size {
-	border-spacing: 2px;
+    border-spacing: 2px;
 }
-
-
-
-hi{
-	width: 5;
-}
-
-
-	width: 50;
-	height: 300;
-}
-
-
-*{
-	margin: 0;
-	padding:0;
-
-}
-
-
-f{
- height: 100px;   
-}
-

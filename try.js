@@ -1,19 +1,29 @@
-/*let sentence = "This is meant to be a normal  sentence that  should be printed out backwards if it works"
-let reversed;
+function AddVar(age1, age2, pastAge) {
+    setTimeout(function() {
+        totalAge = age1 + age2
+        pastAge(totalAge)
 
-function reverse() {
-    reversed = "";
-    sentence.split(' ').forEach(item => {
-        if (item.startsWith("a") || item.startsWith("e") || item.startsWith("i") || item.startsWith("o") || item.startsWith("u")) {
-            reversed += item + "pole "
-
-        } else {
-            reversed += item.substring(1) + item.substring(0, 1) + "yz "
-        }
-    });
-    return reversed;
+    }, 2000)
 }
-document.write(reverse())*/
+AddVar(2, 4, function(totalAge) {
+        console.log(totalAge)
+    })
+    /*let sentence = "This is meant to be a normal  sentence that  should be printed out backwards if it works"
+           let reversed;
+
+           function reverse() {
+               reversed = "";
+               sentence.split(' ').forEach(item => {
+                   if (item.startsWith("a") || item.startsWith("e") || item.startsWith("i") || item.startsWith("o") || item.startsWith("u")) {
+                       reversed += item + "pole "
+
+                   } else {
+                       reversed += item.substring(1) + item.substring(0, 1) + "yz "
+                   }
+               });
+               return reversed;
+           }
+           document.write(reverse())*/
 
 /*let myArray = [ [1, 2, 3], [4, 5, 6], [7, 8, 9]]
 document.write(myArray[0][0]);
@@ -65,4 +75,15 @@ for (let i = 1; i <= 10; i++) {
 /*
 const aid = document.getElementById('aid')
 let ashArray = [1, 2, 3, 4, 5, 6, 7]
-let resultArray = []*/
+let resultArray = []
+function getJob(age, returnToThePast) {
+    setTimeout(function() {
+        age += 5;
+        returnToThePast(age, "idiot")
+    }, 5000);
+    return age
+}
+getJob(16, function(age, comment) {
+    console.log(age + 10)
+    console.log(comment)
+})*/
